@@ -1,16 +1,45 @@
-# React + Vite
+# Notes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal notes app built while learning React — practicing the fundamentals of components, state, and forms.
 
-Currently, two official plugins are available:
+**Live demo:** https://your-username.github.io/your-repo-name/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What it does
 
-## React Compiler
+- Add, edit, and delete notes
+- Form validation (title and content are both required)
+- Two-way data binding between the form and app state
+- Responsive layout, styled with Tailwind CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Concepts practiced
 
-## Expanding the ESLint configuration
+This project was built to get hands-on practice with:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- JSX and component structure
+- Props and component composition
+- `useState` (basic and more advanced patterns, like tracking an "editing" state across components)
+- Controlled form inputs and two-way binding
+- Conditional rendering (empty states, edit vs. add mode)
+- Utility-first styling with Tailwind CSS
+
+## Tech stack
+
+- React
+- Vite
+- Tailwind CSS
+
+## Running it locally
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
+npm run dev
+```
+
+The app will be running at `http://localhost:5173`.
+
+## Possible next steps
+
+- Persist notes with `localStorage`
+- Sort or search notes
