@@ -2,7 +2,7 @@
 
 A minimal notes app built while learning React — practicing the fundamentals of components, state, and forms.
 
-**Live demo:** atulrawat4903.github.io/Notes-App/
+**Live demo:** https://atulrawat4903.github.io/Notes-App/
 
 ## What it does
 
