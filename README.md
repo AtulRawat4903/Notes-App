@@ -41,5 +41,5 @@ The app will be running at `http://localhost:5173`.
 
 ## Possible next steps
 
-- Persist notes with `localStorage`
+- Persist notes with `localStorage` (✅Done)
 - Sort or search notes
