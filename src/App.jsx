@@ -2,10 +2,19 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import NoteForm from "./components/NoteForm";
 import NotesContainer from "./components/NotesContainer";
+import { useEffect } from "react";
 
 const App = () => {
-  const [notes, setNotes] = useState([]);
+  const [notes, setNotes] = useState(() => {
+    const savedNotes = localStorage.getItem("notes");
+
+    return savedNotes ? JSON.parse(savedNotes) : [];
+  });
   const [editingNoteId, setEditingNoteId] = useState(null);
+
+  useEffect(() => {
+    localStorage.setItem("notes", JSON.stringify(notes));
+  }, [notes]);
 
   const addNote = (note) => {
     setNotes([...notes, note]);
